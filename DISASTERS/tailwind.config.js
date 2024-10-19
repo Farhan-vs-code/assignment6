@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        zinc: "#A1A1AA",
+        zinc: "#71717A",
+        zinc200: "#E4E4E7",
+        zinc100: "#F4F4F5",
       }
     },
   },

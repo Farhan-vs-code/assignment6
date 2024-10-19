@@ -1,10 +1,12 @@
 import { Button } from './Components/Common/button'
 import { Card } from './Components/Common/card'
+import { Card2 } from './Components/Common/card2'
 import { Search } from './Components/Common/search'
 import { Dashboard } from './Components/Dashboard'
 import { Incidents } from './Components/Incidents'
 import Navbar from './Components/Navbar'
 import { Step1 } from './Components/step1'
+import { Step2 } from './Components/step2'
 import './index.css'
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <Navbar />
       {/* <Dashboard /> */}
       {/* <Incidents /> */}
-      <Step1/>
+      {/* <Step1/> */}
+      <Step2/>
+      
     </>
   )
 }
