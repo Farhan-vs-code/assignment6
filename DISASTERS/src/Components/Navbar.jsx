@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { Button } from './Common/button';
 
 const Navbar = () => {
-    let Links =[
+    const Links =[
       {name:"Dashboard",link:"/"},
       {name:"Incidents",link:"/"},
       {name:"Locations",link:"/"},
@@ -9,10 +10,10 @@ const Navbar = () => {
       {name:"Documents",link:"/"},
       {name:"Cypher AI",link:"/"},
     ];
-    let [open,setOpen] = useState(false);
+    const [open,setOpen] = useState(false);
   return (
     <>
-    <div className='w-full fixed top-0 left-0'>
+    <div className='w-full'>
       <div className='md:flex items-center justify-between bg-gray-200 py-4 md:px-10 px-7'>
       <div>
         <img src="/logo.png" alt="" />
@@ -22,7 +23,7 @@ const Navbar = () => {
       <ion-icon name={open ? 'close':'menu'}></ion-icon>
       </div>
 
-      <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+      <ul className={`md:flex md:items-center md:pb-0 pb-12 bg-gray-200 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
         {
           Links.map((link)=> (
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-2'>
