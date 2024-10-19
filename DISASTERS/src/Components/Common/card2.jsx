@@ -26,10 +26,10 @@ export const Card2 = () => {
         <div>
           <h1 className='text-2xl font-bold text-center mt-12 mb-10'>Which of these best describes the incident?</h1>
        </div>
-       <div className='flex flex-wrap justify-center gap-6  mx-[25%]'>
+       <div className='flex flex-wrap justify-center gap-6  md:mx-[25%]'>
        {Card.map((card)=> (
          <div className=''>
-         <button className='flex items-center justify-center text-sm bg-zinc100 text-zinc gap-2 p-3 w-[180px] h-16  mt-2 rounded-md'>
+         <button className='flex items-center justify-center text-sm bg-zinc100 text-zinc gap-2  w-[180px] h-16  mt-2 rounded-md'>
              <img src={card.img} alt="" />
              {card.text}
          </button>

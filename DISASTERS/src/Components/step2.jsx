@@ -7,7 +7,7 @@ export const Step2 = () => {
     <>
     <div className='bg-zinc200 flex md:justify-around items-center md:p-2'>
       <div className='flex md:gap-2 '>
-        <div className='inline-block py-2'>
+        <div className='sm:flex hidden py-2'>
         <button className='bg-white py-2 px-4 rounded-[90%]'>x</button>
         </div>
         <div className='p-1'>
@@ -16,7 +16,7 @@ export const Step2 = () => {
       </div>
       </div>
 
-      <div className='md:flex hidden'>
+      <div className='sm:flex hidden'>
         <img src="g-7.png" alt="" />
       </div>
       <div className='flex md:gap-2 gap-1'>

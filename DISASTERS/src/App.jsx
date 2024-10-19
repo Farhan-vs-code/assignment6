@@ -7,6 +7,7 @@ import { Incidents } from './Components/Incidents'
 import Navbar from './Components/Navbar'
 import { Step1 } from './Components/step1'
 import { Step2 } from './Components/step2'
+import { Step3 } from './Components/step3'
 import './index.css'
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       {/* <Dashboard /> */}
       {/* <Incidents /> */}
       {/* <Step1/> */}
-      <Step2/>
+      {/* <Step2/> */}
+      <Step3/>
       
     </>
   )
