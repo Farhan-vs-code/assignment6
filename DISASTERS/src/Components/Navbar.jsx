@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const Links =[
       {name:"Dashboard",link:"/"},
-      {name:"Incidents",link:"/"},
-      {name:"Locations",link:"/"},
-      {name:"Activities",link:"/"},
-      {name:"Documents",link:"/"},
-      {name:"Cypher AI",link:"/"},
+      {name:"Incidents",link:"/Incidents"},
+      {name:"Locations",link:"/Location"},
+      {name:"Activities",link:"/Activities"},
+      {name:"Documents",link:"/Documents"},
+      {name:"Cypher AI",link:"/Cypher"},
     ];
     const [open,setOpen] = useState(false);
   return (
     <>
-    <div className='w-full'>
+    <div className='w-full fixed top-0 left-0'>
       <div className='md:flex items-center justify-between bg-zinc200 py-4 md:px-10 px-7'>
       <div>
         <img src="/logo.png" alt="" />
@@ -26,7 +26,7 @@ const Navbar = () => {
         {
           Links.map((link)=> (
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-2'>
-              <a href={link.link} className='text-zinc duration-500 text-sm'>{link.name}</a>
+              <Link to={link.link} className='md:text-zinc duration-500 text-sm'>{link.name}</Link>
             </li>
           ))
         }

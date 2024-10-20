@@ -10,7 +10,7 @@ const toggleImage = () => {
   setIsImageVisible(!isImageVisible);
 };
   return (
-    <div className=''>
+    <div className='md:mt-[78px] mt-16'>
        <div className='bg-zinc200 flex justify-around p-3'>
          <div>
           <h3 className='text-xs text-zinc mb-2'>Welcome back</h3>

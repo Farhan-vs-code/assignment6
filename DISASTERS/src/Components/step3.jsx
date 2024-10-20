@@ -1,9 +1,13 @@
 import React from 'react'
-import { Button } from './Common/button'
+import { useNavigate } from 'react-router-dom'
 export const Step3 = () => {
+  const Navigate = useNavigate()
+  const handelClick = ()=> {
+      Navigate("/Step4")
+  }
   return (
     <>
-      <div className='bg-zinc200 flex md:justify-around items-center md:p-2'>
+      <div className='bg-zinc200 flex md:justify-around items-center md:p-2 md:mt-[78px] mt-16'>
       <div className='flex md:gap-2 '>
         <div className='sm:flex hidden py-2'>
         <button className='bg-white py-2 px-4 rounded-[90%]'>x</button>
@@ -19,7 +23,7 @@ export const Step3 = () => {
       </div>
       <div className='flex md:gap-2 gap-1'>
        <div> <button className='bg-white text-xs text-zinc px-6 py-2 rounded-md'>Back</button></div>
-        <Button>Next step</Button>
+       <button onClick={handelClick} className='py-2 px-6 bg-[#F26922] text-xs text-white rounded-md'>Next step</button>
       </div>
     </div>
 

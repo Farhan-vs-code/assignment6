@@ -1,6 +1,10 @@
 import React from 'react'
-import { Button } from './Common/button';
+import { useNavigate } from 'react-router-dom'
 export const Step1 = () => {
+    const Navigate = useNavigate()
+    const handelClick = ()=> {
+        Navigate("/Step2")
+    }
     const card2 = [
         {
             image: "g-4.png",
@@ -20,7 +24,7 @@ export const Step1 = () => {
     ]
   return (
     <>
-       <div className='mt-12 flex flex-col gap-5'>
+       <div className='flex flex-col gap-5 md:mt-40 mt-16'>
         <h1 className='text-4xl font-bold text-center'>Let’s get started</h1>
         <p className='text-[16px] text-center text-zinc'>Lorem ipsum dolar sit general sac mascho werhoLorem ipsum<br/>
              dolar sit general sac mascho werhoLorem ipsum dolar sit gene</p>
@@ -38,7 +42,7 @@ export const Step1 = () => {
         ))}
         </div>
         <div className='md:mt-20 mt-5 mb-5 flex justify-center'>
-            <Button>Get started</Button>
+        <button onClick={handelClick} className='py-2 px-6 bg-[#F26922] text-xs text-white rounded-md'>Get started</button>
         </div>
     </>
   )

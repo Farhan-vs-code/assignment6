@@ -34,7 +34,7 @@ export const Location = () => {
     },
 ]
   return (
-    <>
+    <section className='md:mt-[78px] mt-16'>
     <div className='bg-zinc200 flex justify-around p-3'>
           <div>
               <h3 className='text-xs text-zinc mb-2'>Incidents - DR-4699 March 2023 Severe Storms </h3>
@@ -73,9 +73,9 @@ export const Location = () => {
             <section className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
               {card.map((card)=> (
                 <div className='m-2'>
-                <div className='relative'>
+                <div className='lg:relative'>
                              <img src={card.image} alt="" className='' />
-                             <img src={card.image2} alt=""  className='absolute top-0 left-32 p-2'/>
+                             <img src={card.image2} alt=""  className='lg:flex hidden absolute top-0 left-32 p-2'/>
                           </div>
                           <div className='p-1'>
                            <h1 className='font-bold'>{card.title}</h1>
@@ -146,6 +146,6 @@ export const Location = () => {
 
       </section>
        
-    </>
+    </section>
   )
 }

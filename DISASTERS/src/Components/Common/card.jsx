@@ -49,9 +49,9 @@ export const Card = () => {
     <section className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center mt-8'>
        {card.map((card) => (
         <div className='m-2'>
-        <div className='relative'>
+        <div className='lg:relative'>
                      <img src={card.image} alt="" className='' />
-                     <img src={card.image2} alt=""  className='absolute top-0 left-48 p-2'/>
+                     <img src={card.image2} alt=""  className='lg:flex hidden absolute top-0 left-48 p-2'/>
                   </div>
                   <div className='p-1'>
                    <h1 className='font-bold'>{card.title}</h1>
