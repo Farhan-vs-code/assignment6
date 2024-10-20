@@ -23,17 +23,17 @@ export const Step3 = () => {
       </div>
     </div>
 
-         <div className='mt-10 mx-[25%]'>
+         <div className='mt-10 lg:mx-[600px] md:mx-auto md:container mx-3'>
           <div>
            <h1 className='text-2xl font-bold'>Let’s give the incident a title?</h1>
            <p className='text-sm text-zinc mt-2 mb-2'>Make a title that will easily identify the incidents</p>
-            <input type="text"  placeholder='Add title here' className='w-[752px] h-12 bg-zinc100 text-xs text-zinc outline-none p-2 mb-3'/>
+            <input type="text"  placeholder='Add title here' className='md:w-[752px] md:h-12 w-72 bg-zinc100 text-xs text-zinc outline-none p-2 mb-3'/>
             </div>
           <div>
            <h1 className='text-2xl font-bold'>Describe what happened during the incident?</h1>
            <p className='text-sm text-zinc mt-2 mb-2'>Share some information about the incident. The when, where, how.</p>
-            <input type="text"  placeholder='Type here' className='w-[752px] h-32 bg-zinc100 text-xs text-zinc outline-none p-2 mt-2'/>
-            <input type="text" />
+            <textarea name="" placeholder='Type here' className='md:w-[752px] w-72 h-32 bg-zinc100 text-xs text-zinc outline-none p-2 mt-2'></textarea>
+            
             </div>
          </div>
 
