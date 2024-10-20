@@ -55,7 +55,7 @@ export const Card = () => {
                   </div>
                   <div className='p-1'>
                    <h1 className='font-bold'>{card.title}</h1>
-                   <p className='text-sm text-gray-500'>{card.dec}</p>
+                   <p className='text-sm text-zinc'>{card.dec}</p>
                    <h2 className='font-bold'>{card.price}</h2>
                   </div>
         </div>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Button } from './Common/button';
 
 const Navbar = () => {
     const Links =[
@@ -14,7 +13,7 @@ const Navbar = () => {
   return (
     <>
     <div className='w-full'>
-      <div className='md:flex items-center justify-between bg-gray-200 py-4 md:px-10 px-7'>
+      <div className='md:flex items-center justify-between bg-zinc200 py-4 md:px-10 px-7'>
       <div>
         <img src="/logo.png" alt="" />
       </div>
@@ -23,11 +22,11 @@ const Navbar = () => {
       <ion-icon name={open ? 'close':'menu'}></ion-icon>
       </div>
 
-      <ul className={`md:flex md:items-center md:pb-0 pb-12 bg-gray-200 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
+      <ul className={`md:flex md:items-center md:pb-0 pb-12 bg-zinc200 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
         {
           Links.map((link)=> (
             <li key={link.name} className='md:ml-8 text-xl md:my-0 my-2'>
-              <a href={link.link} className='text-gray-500 duration-500 text-sm'>{link.name}</a>
+              <a href={link.link} className='text-zinc duration-500 text-sm'>{link.name}</a>
             </li>
           ))
         }
@@ -36,7 +35,7 @@ const Navbar = () => {
       <div className='md:flex hidden gap-2'>
         <img src="/n-1.png" alt="" />
         <img src="/h-1.png" alt="" />
-        <div className='text-gray-400'>
+        <div className='text-zinc'>
             <h3>Usman Zafar</h3>
             <h4 className='text-sm'>usmanzafar@gmail.com</h4>
         </div>

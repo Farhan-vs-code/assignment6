@@ -4,6 +4,7 @@ import { Card2 } from './Components/Common/card2'
 import { Search } from './Components/Common/search'
 import { Dashboard } from './Components/Dashboard'
 import { Incidents } from './Components/Incidents'
+import { Location } from './Components/Location'
 import Navbar from './Components/Navbar'
 import { Step1 } from './Components/step1'
 import { Step2 } from './Components/step2'
@@ -21,8 +22,8 @@ function App() {
       {/* <Step1/> */}
       {/* <Step2/> */}
       {/* <Step3/> */}
-      <Step4/>
-      
+      {/* <Step4/> */}
+      <Location/>
     </>
   )
 }

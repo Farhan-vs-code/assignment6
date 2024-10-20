@@ -12,7 +12,7 @@ export const Search = () => {
 }
 export const StorBy = () => {
   return (
-    <div className='text-xs p-2 bg-white text-gray-500 h-8 rounded-md md:flex hidden'>
+    <div className='text-xs p-2 bg-white text-zinc h-8 rounded-md md:flex hidden'>
         <h3>Sort By: Date modified</h3>
     </div>
   )
